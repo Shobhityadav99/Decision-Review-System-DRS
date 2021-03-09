@@ -13,5 +13,14 @@ photo = PIL.ImageTk.PhotoImage(image=PIL.Image.fromarray(cv_img))
 image_on_canvas =canvas.create_image(0,0,ancho = tkinter.NW,image = photo)
 canvas.pack()
 
+btn = tkinter.Button(window,text="<< Previous (fast)",width=50)
+btn.pack()
+btn = tkinter.Button(window,text="<< Previous (slow)",width=50)
+btn.pack()
+btn = tkinter.Button(window,text=">> Next (fast)",width=50)
+btn.pack()
+btn = tkinter.Button(window,text=">> Next (slow)",width=50)
+btn.pack()
+
 
 window.mainloop()
